@@ -1,0 +1,14 @@
+/Users/kydang/Downloads/CSLT/bin/Debug/net10.0/CSLT
+/Users/kydang/Downloads/CSLT/bin/Debug/net10.0/CSLT.deps.json
+/Users/kydang/Downloads/CSLT/bin/Debug/net10.0/CSLT.runtimeconfig.json
+/Users/kydang/Downloads/CSLT/bin/Debug/net10.0/CSLT.dll
+/Users/kydang/Downloads/CSLT/bin/Debug/net10.0/CSLT.pdb
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.AssemblyInfoInputs.cache
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.AssemblyInfo.cs
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.csproj.CoreCompileInputs.cache
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.dll
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/refint/CSLT.dll
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.pdb
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.genruntimeconfig.cache
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/ref/CSLT.dll
