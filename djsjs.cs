@@ -9,9 +9,9 @@ namespace BaiTap
         {
             public static float calcGPA(float toan, float ly, float hoa)
             {
-                return toan * 2f + ly * 1.5f + hoa;
+                return toan * 2f + ly * 2f + hoa;
             }
-
+    
             public static bool isPrime(int so)
             {
                 if (so < 2)
