@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Y1GsnxxkQ1M=",
+  "dgSpecHash": "gdPRTzRujRQ=",
   "success": true,
   "projectFilePath": "/Users/kydang/Downloads/CSLT/CSLT.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/kydang/.nuget/packages/microsoft.netcore.app.host.linux-arm64/10.0.11/microsoft.netcore.app.host.linux-arm64.10.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

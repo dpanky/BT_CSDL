@@ -12,3 +12,4 @@
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/linux-arm64/CSLT.pdb
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/linux-arm64/CSLT.genruntimeconfig.cache
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/linux-arm64/ref/CSLT.dll
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/linux-arm64/CSLT.sourcelink.json
