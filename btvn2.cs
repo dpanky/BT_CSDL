@@ -3,11 +3,11 @@ using System;
 namespace BTVN
 {
     class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Bai2();
+        Bai2();
         }
+
         // Bài 2: Phân quyền truy cập hệ thống (Role Authorization)
         static void Bai2()
         {
