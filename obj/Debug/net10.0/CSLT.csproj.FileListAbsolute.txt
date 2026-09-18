@@ -12,3 +12,4 @@
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.pdb
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.genruntimeconfig.cache
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/ref/CSLT.dll
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.sourcelink.json
