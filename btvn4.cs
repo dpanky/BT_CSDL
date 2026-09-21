@@ -1,27 +1,73 @@
 using System;
 
-namespace Baitap {
-    internal class Functions_Exercises 
+namespace BaiTap
+{
+    internal class Program
     {
         public static void Main(string[] args)
-         
-        // Bài 1: Tính tổng hai số nguyên
-        public static int TinhTong(int a, int b) {
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+        }
+        // Bai 1: Tinh tong 2 so nguyen
+        public static void Bai1()
+        {
+         Console.Write("Nhập số a: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Nhập số b: ");
+            int b = int.Parse(Console.ReadLine());
+ 
+            Console.WriteLine($"Tổng = {TinhTong(a, b)}");
+        }
+ 
+        static int TinhTong(int a, int b) {
             return a + b;
         }
 
-        // Bài 2: Kiểm tra số chẵn lẻ
-        public static bool KiemTraChan(int n) {
+        // Bai 2: Kiem tra chan le
+        public static void Bai2()
+        {
+            Console.Write("Nhập số: ");
+            int n = int.Parse(Console.ReadLine());
+ 
+            Console.WriteLine(KiemTraChan(n) ? "n là số chẵn" : "n là số lẻ");
+        }
+ 
+        static bool KiemTraChan(int n) {
             return n % 2 == 0;
         }
 
-        // Bài 3: Tìm số lớn nhất trong ba số
-        public static int TimMax(int a, int b, int c) {
-            return Math.Max(Math.Max(a, b), c);
+        // Bai 3: Tim so lon nhat trong 3 so
+        public static void Bai3()
+        {
+            Console.Write("Nhập số a: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Nhập số b: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("Nhập số c: ");
+            int c = int.Parse(Console.ReadLine());
+ 
+            Console.WriteLine($"Số lớn nhất là: {TimSoLonNhat(a, b, c)}");
+        }
+        static int TimSoLonNhat(int a, int b, int c) {
+            int max = a;
+            if (b > max) {
+                max = b;
+            }
+            if (c > max) {
+                max = c;
+            }
+            return max;
         }
 
-        // Bài 4: Tính giai thừa
-        public static long TinhGiaiThua(int n) {
+        // Bai 4: Tinh giai thua cua 1 so
+        public static void Bai4()
+        {
+             Console.Write("Nhập số n: ");
+            int n = int.Parse(Console.ReadLine());
+ 
+            Console.WriteLine($"{n}! = {TinhGiaiThua(n)}");
+        }
+        static long TinhGiaiThua(int n) {
             long ketQua = 1;
             for (int i = 1; i <= n; i++) {
                 ketQua *= i;
@@ -29,36 +75,31 @@ namespace Baitap {
             return ketQua;
         }
 
-        // Bài 5: Đảo ngược chuỗi
-        public static string DaoNguocChuoi(string input) {
-            char[] mang = input.ToCharArray();
-            Array.Reverse(mang);
-            return new string(mang);
+        // Bai 6: Kiem tra so nguyen to
+        public static void Bai6()
+        {
+            Console.Write("Nhập số: ");
+            int n = int.Parse(Console.ReadLine());
+ 
+            Console.WriteLine(KiemTraNguyenTo(n) ? "n là số nguyên tố" : "n không phải là số nguyên tố");
         }
-
-        // Bài 6: Kiểm tra số nguyên tố
-        public static bool KiemTraNguyenTo(int n) {
+        static bool KiemTraNguyenTo(int n) {
             if (n < 2) return false;
-            for (int i = 2; i * i <= n; i++) {
+            for (int i = 2; i <= Math.Sqrt(n); i++) {
                 if (n % i == 0) return false;
             }
             return true;
         }
-
-        // Bài 7: In dãy Fibonacci
-        public static void InFibonacci(int n) {
-            int a = 0, b = 1;
-            for (int i = 0; i < n; i++) {
-                Console.Write(a + " ");
-                int tam = a + b;
-                a = b;
-                b = tam;
-            }
-            Console.WriteLine();
+        // Bai 8: Dem so nguyen am cua chuoi
+        public static void Bai8()
+        {
+              Console.Write("Nhập chuỗi: ");
+            string s = Console.ReadLine();
+ 
+            Console.WriteLine($"Số lượng nguyên âm: {DemNguyenAm(s)}");
         }
-
-        // Bài 8: Đếm nguyên âm
-        public static int DemNguyenAm(string s) {
+ 
+        static int DemNguyenAm(string s) {
             string nguyenAm = "aeiouAEIOU";
             int dem = 0;
             foreach (char c in s) {
@@ -66,101 +107,77 @@ namespace Baitap {
             }
             return dem;
         }
-
-        // Bài 9: Tính lũy thừa (không dùng Math.Pow)
-        public static double TinhLuyThua(double x, int y) {
+        // Bai 9: Tinh luy thua
+        public static void Bai9()
+        {
+            Console.Write("Nhập x: ");
+            double x = double.Parse(Console.ReadLine());
+            Console.Write("Nhập y (số mũ): ");
+            int y = int.Parse(Console.ReadLine());
+ 
+            Console.WriteLine($"{x}^{y} = {TinhLuyThua(x, y)}");
+        }
+ 
+        static double TinhLuyThua(double x, int y) {
             double ketQua = 1;
             for (int i = 0; i < y; i++) {
                 ketQua *= x;
             }
             return ketQua;
         }
-
-        // Bài 10: Tính trung bình mảng
-        public static double TinhTrungBinh(int[] arr) {
-            int tong = 0;
-            foreach (int x in arr) tong += x;
-            return (double)tong / arr.Length;
+        // Bai 10: Tinh diem TB cua mang 
+        public static void Bai10()
+        {
+            Console.Write("Nhập số lượng phần tử: ");
+            int n = int.Parse(Console.ReadLine());
+            double[] mang = new double[n];
+ 
+            for (int i = 0; i < n; i++) {
+                Console.Write($"Nhập phần tử thứ {i + 1}: ");
+                mang[i] = double.Parse(Console.ReadLine());
+            }
+ 
+            Console.WriteLine($"Điểm trung bình: {TinhDiemTB(mang)}");
+        }
+        static double TinhDiemTB(double[] mang) {
+            double tong = 0;
+            foreach (double diem in mang) {
+                tong += diem;
+            }
+            return tong / mang.Length;
         }
 
-        // Bài 11: Kiểm tra chuỗi đối xứng
-        public static bool KiemTraDoiXung(string s) {
-            return s == DaoNguocChuoi(s);
+        // Bai 12: Chuyen do C -> F
+        public static void Bai12()
+        {
+            Console.Write("Nhập nhiệt độ C: ");
+            double c = double.Parse(Console.ReadLine());
+ 
+            Console.WriteLine($"{c} độ C = {CelsiusToFahrenheit(c)} độ F");
         }
-
-        // Bài 12: Chuyển đổi C sang F
-        public static double CelsiusToFahrenheit(double c) {
+ 
+        static double CelsiusToFahrenheit(double c) {
             return c * 9 / 5 + 32;
         }
 
-        // Bài 13: Tìm giá trị nhỏ nhất trong mảng
-        public static int TimMin(int[] arr) {
-            int min = arr[0];
-            foreach (int x in arr) {
-                if (x < min) min = x;
+        // Bai 13: Tim GTNN trong mang
+        public static void Bai13()
+        {
+            Console.Write("Nhập số lượng phần tử: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] mang = new int[n];
+            for (int i = 0; i < n; i++) {
+                Console.Write($"Nhập phần tử thứ {i + 1}: ");
+                mang[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine($"Giá trị nhỏ nhất trong mảng: {TimGTNN(mang)}");
+        }
+        static int TimGTNN(int[] mang) {
+            int min = mang[0];
+            foreach (int so in mang) {
+                if (so < min) min = so;
             }
             return min;
-        }
-
-        // Bài 14: Tổng các chữ số
-        public static int TongCacChuSo(int n) {
-            int tong = 0;
-            while (n > 0) {
-                tong += n % 10;
-                n /= 10;
-            }
-            return tong;
-        }
-
-        // Bài 15: Sắp xếp mảng tăng dần và in ra
-        public static void SapXepMang(int[] arr) {
-            Array.Sort(arr);
-            Console.WriteLine(string.Join(" ", arr));
-        }
-
-        // Bài 16: Xóa ký tự trùng lặp
-        public static string XoaTrungLap(string s) {
-            StringBuilder ketQua = new StringBuilder();
-            HashSet<char> daXuatHien = new HashSet<char>();
-            foreach (char c in s) {
-                if (!daXuatHien.Contains(c)) {
-                    daXuatHien.Add(c);
-                    ketQua.Append(c);
-                }
-            }
-            return ketQua.ToString();
-        }
-
-        // Bài 17: Tìm UCLN (thuật toán Euclid)
-        public static int UCLN(int a, int b) {
-            while (b != 0) {
-                int tam = b;
-                b = a % b;
-                a = tam;
-            }
-            return a;
-        }
-
-        // Bài 18: Chuyển thập phân sang nhị phân
-        public static string DecimalToBinary(int n) {
-            if (n == 0) return "0";
-            StringBuilder ketQua = new StringBuilder();
-            while (n > 0) {
-                ketQua.Insert(0, n % 2);
-                n /= 2;
-            }
-            return ketQua.ToString();
-        }
-
-        // Bài 19: Kiểm tra năm nhuận
-        public static bool KiemTraNamNhuan(int year) {
-            return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
-        }
-
-        // Bài 20: Đếm số từ trong câu
-        public static int DemSoTu(string sentence) {
-            string[] tuMang = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            return tuMang.Length;
         }
     }
 }
