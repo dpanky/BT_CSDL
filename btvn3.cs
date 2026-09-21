@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BaiTap
 {
@@ -9,33 +7,6 @@ namespace BaiTap
         public static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-
-            Console.WriteLine("=== MENU BÀI TẬP BTVN 3 ===");
-            Console.WriteLine("1. Game lắc xúc xắc (Tài / Xỉu / Lục)");
-            Console.WriteLine("2. Game đoán số (1 - 100)");
-            Console.WriteLine("6. Bài 6: Tính tổng dãy số Harmonic (1 + 1/2 + ... + 1/n)");
-            Console.WriteLine("7. Bài 7: Tìm số hoàn hảo trong khoảng");
-            Console.Write("Nhập lựa chọn của bạn (1, 2, 6, 7): ");
-
-            string choice = Console.ReadLine();
-            switch (choice)
-            {
-                case "1":
-                    dice_game();
-                    break;
-                case "2":
-                    Bai2();
-                    break;
-                case "6":
-                    Bai6();
-                    break;
-                case "7":
-                    Bai7();
-                    break;
-                default:
-                    Console.WriteLine("Lựa chọn không hợp lệ!");
-                    break;
-            }
         }
 
         /// <summary>

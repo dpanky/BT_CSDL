@@ -7,9 +7,9 @@
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.AssemblyInfoInputs.cache
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.AssemblyInfo.cs
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.csproj.CoreCompileInputs.cache
-/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.sourcelink.json
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.dll
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/refint/CSLT.dll
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.pdb
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.genruntimeconfig.cache
 /Users/kydang/Downloads/CSLT/obj/Debug/net10.0/ref/CSLT.dll
+/Users/kydang/Downloads/CSLT/obj/Debug/net10.0/CSLT.sourcelink.json
